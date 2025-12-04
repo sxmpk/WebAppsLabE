@@ -6,7 +6,7 @@ interface StyleConfig {
 const styles: StyleConfig[] = [
     { name: 'Standard', fileName: 'style-standard.css' },
     { name: 'Matrix', fileName: 'style-matrix.css' },
-    // { name: 'Neon', fileName: 'style-neon.css' }
+    { name: 'Neon', fileName: 'style-neon.css' }
 ];
 
 let currentStyle: StyleConfig = styles[0];
