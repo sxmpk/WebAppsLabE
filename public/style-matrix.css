@@ -1,0 +1,20 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Courier New', monospace; background-color: #000; color: #00ff00; line-height: 1.6; overflow-x: hidden; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.gallery-section, .cities-section, .facts-section, .history-section { position: relative; background: #050a05; border: 1px solid rgba(0, 255, 0, 0.3); box-shadow: 0 0 20px rgba(0, 255, 0, 0.3), inset 0 0 15px rgba(0,0,0,0.7); padding: 60px 20px; overflow: hidden; margin-bottom: 20px; }
+h1, h2, h3, p, .logo, .banner-title, .banner-text, .nav-link, .counter-number, .city-name, .section-header { color: #00ff00 !important; text-shadow: 0 0 5px rgba(0, 255, 0, 0.7); font-family: 'Courier New', monospace; }
+.photo-card, .city-card, .fact-box, .timeline-content, .counter-box, .record-card { background: rgba(0, 255, 0, 0.05) !important; border: 1px dashed rgba(0, 255, 0, 0.5) !important; border-radius: 0 !important; box-shadow: none !important; }
+.gallery-section::before, .cities-section::before { content: 'SYSTEM ALERT // DATA CORRUPTED'; position: absolute; top: 15px; left: 20px; font-family: 'Courier New', monospace; font-size: 1rem; color: #000; background: #00ff00; padding: 3px 10px; animation: text-flicker 3s infinite; }
+.gallery-section::after, .cities-section::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: repeating-linear-gradient(to bottom, transparent 0, rgba(0,0,0,0.5) 1px, transparent 2px); pointer-events: none; }
+@keyframes text-flicker { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+.header { background: #000; border-bottom: 2px solid #00ff00; padding: 40px 0; }
+.navigation { background: #001100; border-bottom: 1px solid #00ff00; }
+.nav-link { background: transparent; border: 1px solid #00ff00; margin: 5px; }
+.nav-link:hover { background: #00ff00; color: #000 !important; }
+.footer { background: #000; border-top: 2px solid #00ff00; color: #00ff00; }
+.btn-glossy { background: #000; border: 1px solid #00ff00; color: #00ff00; border-radius: 0; }
+.btn-glossy:hover { background: #00ff00; color: #000; }
+img { filter: grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(300%); border: 1px solid #00ff00; }
+.timeline::before { background: #00ff00; }
+.timeline-event::before { background: #000; border-color: #00ff00; box-shadow: 0 0 10px #00ff00; }
