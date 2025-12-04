@@ -6,7 +6,7 @@ interface StyleConfig {
 const styles: StyleConfig[] = [
     { name: 'Standard', fileName: 'style-standard.css' },
     { name: 'Matrix', fileName: 'style-matrix.css' },
-    { name: 'Neon', fileName: 'style-neon.css' }
+    // { name: 'Neon', fileName: 'style-neon.css' }
 ];
 
 let currentStyle: StyleConfig = styles[0];
@@ -40,9 +40,8 @@ const generateLinks = () => {
         return;
     }
 
-    container.innerHTML = ''; // Czyścimy
+    container.innerHTML = '';
 
-    // Dodajemy etykietę
     const label = document.createElement('span');
     label.innerText = 'Styl: ';
     label.style.color = '#fff';
